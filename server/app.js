@@ -2,7 +2,8 @@
 require('./db/config');
 const express = require('express'),
   path = require('path'),
-  cors = require('cors');
+  cors = require('cors'),
+  userRouter = require('./routes/users');
 
 const app = express();
 
@@ -15,6 +16,7 @@ app.use(express.json());
 
 // routes
 // we'll fill these in later
+app.use(userRouter);
 
 // These lines will serve any static files once we push this to Heroku
 if (process.env.NODE_ENV === 'production') {
