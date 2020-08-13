@@ -33,7 +33,7 @@
 
 - in the User component,
 
-  1. Get the id of the user from the params, and save it to a variable called "id"
+  1. Get the id of the user from the URL params, and save it to a variable called "id"
   2. When the component first mounts, using the id, make a call to the correct route in the backend to retrieve the user information and save it to a state variable.
   3. Render the user information.
 
