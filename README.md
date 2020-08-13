@@ -20,7 +20,7 @@
 
 - in the Home component,
 
-  1.  When this component first mounts, fetch for all the users and save it to state.
+  1.  When this component first mounts, fetch for all the users using axios and save them to state.
   2.  Map through all of the users in state and change the hard coded values of User Name, User Email, User Phone Number, and Favorite Quote
   3.  Each div should also have an onClick function that will route you to /user/:id route, make sure to dynamically add a user's id.
 
@@ -28,7 +28,7 @@
 
   1.  Fix the label and give each Form.Control the "name" of each required attribute in our User model.
   2.  Create a function that captures the input values and sets them to state.
-  3.  When the form submits, write a function that will post the state variables to the database to create a new User.
+  3.  When the form submits, write a function that will post the state variables to the body of the axios request to create a new User.
   4.  Also, after a new user is created, redirect back to the Home page.
 
 - in the User component,
